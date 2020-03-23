@@ -61,7 +61,7 @@ def login():
 	cookie = requests.utils.dict_from_cookiejar(s.cookies)
         cookie = cookie['li_at']
     except:
-        print "[!] Cannot log in"
+        print("[!] Cannot log in")
 	sys.exit(0)
     return cookie
 
